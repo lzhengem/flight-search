@@ -17,7 +17,7 @@ function App ({ dispatch, flights }) {
 const mapStateToProps = state => ({ flights: state.flights })
 
 App.propTypes = {
-  dispatch: PropTypes.object,
+  dispatch: PropTypes.function,
   flights: PropTypes.array
 }
 export default connect(mapStateToProps)(App)
