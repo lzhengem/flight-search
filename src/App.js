@@ -1,24 +1,23 @@
-// import React, { useState, useEffect } from 'react'
 import React from 'react'
-// import { getAmadeus } from './lib/amadeus'
 import './App.css'
+import { connect } from 'react-redux'
+import { PropTypes } from 'prop-types'
 
-function App () {
-  // const [test, setTest] = useState([])
-  // useEffect(() => {
-  //   getAmadeus().then(answer => {
-  //     setTest(answer.data)
-  //   })
-  // }, [])
-
+function App ({ dispatch, flights }) {
   return (
     <div className="App">
-      Hello
-      {/* {test.map((item) =>{
-      return item.id
-    })} */}
+      <div onClick={() => { dispatch({ type: 'FLIGHT_SEARCH_REQUESTED' }) }}>Request some flights</div>
+      {flights.map((flight) => {
+        return (JSON.stringify(flight))
+      })}
     </div>
   )
 }
 
-export default App
+const mapStateToProps = state => ({ flights: state.flights })
+
+App.propTypes = {
+  dispatch: PropTypes.func,
+  flights: PropTypes.array
+}
+export default connect(mapStateToProps)(App)
