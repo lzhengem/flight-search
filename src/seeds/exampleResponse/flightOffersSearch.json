@@ -1,0 +1,258 @@
+[
+  {
+    "type": "flight-offer",
+    "id": "1",
+    "source": "GDS",
+    "instantTicketingRequired": false,
+    "nonHomogeneous": false,
+    "oneWay": false,
+    "lastTicketingDate": "2020-07-14",
+    "numberOfBookableSeats": 4,
+    "itineraries": [
+      {
+        "duration": "PT29H30M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "SYD",
+              "terminal": "1",
+              "at": "2020-08-01T14:15:00"
+            },
+            "arrival": {
+              "iataCode": "HKG",
+              "terminal": "1",
+              "at": "2020-08-01T21:35:00"
+            },
+            "carrierCode": "LX",
+            "number": "9500",
+            "aircraft": { "code": "359" },
+            "operating": { "carrierCode": "CX" },
+            "duration": "PT9H20M",
+            "id": "58",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          },
+          {
+            "departure": {
+              "iataCode": "HKG",
+              "terminal": "1",
+              "at": "2020-08-01T23:45:00"
+            },
+            "arrival": {
+              "iataCode": "ZRH",
+              "at": "2020-08-02T06:10:00"
+            },
+            "carrierCode": "LX",
+            "number": "139",
+            "aircraft": { "code": "77W" },
+            "operating": { "carrierCode": "LX" },
+            "duration": "PT12H25M",
+            "id": "59",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          },
+          {
+            "departure": {
+              "iataCode": "ZRH",
+              "at": "2020-08-02T09:05:00"
+            },
+            "arrival": {
+              "iataCode": "ATH",
+              "at": "2020-08-02T12:45:00"
+            },
+            "carrierCode": "LX",
+            "number": "1830",
+            "aircraft": { "code": "321" },
+            "operating": { "carrierCode": "LX" },
+            "duration": "PT2H40M",
+            "id": "60",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      }
+    ],
+    "price": {
+      "currency": "EUR",
+      "total": "589.27",
+      "base": "255.00",
+      "fees": [
+        { "amount": "0.00", "type": "SUPPLIER" },
+        { "amount": "0.00", "type": "TICKETING" }
+      ],
+      "grandTotal": "589.27",
+      "additionalServices": [{ "amount": "200.00", "type": "CHECKED_BAGS" }]
+    },
+    "pricingOptions": {
+      "fareType": ["PUBLISHED"],
+      "includedCheckedBagsOnly": true
+    },
+    "validatingAirlineCodes": ["LX"],
+    "travelerPricings": [
+      {
+        "travelerId": "1",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "589.27",
+          "base": "255.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "58",
+            "cabin": "ECONOMY",
+            "fareBasis": "TRCOWAU1",
+            "brandedFare": "ECOSTAND",
+            "class": "T",
+            "includedCheckedBags": { "quantity": 1 }
+          },
+          {
+            "segmentId": "59",
+            "cabin": "ECONOMY",
+            "fareBasis": "TRCOWAU1",
+            "brandedFare": "ECOSTAND",
+            "class": "T",
+            "includedCheckedBags": { "quantity": 1 }
+          },
+          {
+            "segmentId": "60",
+            "cabin": "ECONOMY",
+            "fareBasis": "TRCOWAU1",
+            "brandedFare": "ECOSTAND",
+            "class": "T",
+            "includedCheckedBags": { "quantity": 1 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "flight-offer",
+    "id": "2",
+    "source": "GDS",
+    "instantTicketingRequired": false,
+    "nonHomogeneous": false,
+    "oneWay": false,
+    "lastTicketingDate": "2020-07-14",
+    "numberOfBookableSeats": 4,
+    "itineraries": [
+      {
+        "duration": "PT41H30M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "SYD",
+              "terminal": "1",
+              "at": "2020-08-01T14:15:00"
+            },
+            "arrival": {
+              "iataCode": "HKG",
+              "terminal": "1",
+              "at": "2020-08-01T21:35:00"
+            },
+            "carrierCode": "LX",
+            "number": "9500",
+            "aircraft": { "code": "359" },
+            "operating": { "carrierCode": "CX" },
+            "duration": "PT9H20M",
+            "id": "73",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          },
+          {
+            "departure": {
+              "iataCode": "HKG",
+              "terminal": "1",
+              "at": "2020-08-01T23:45:00"
+            },
+            "arrival": {
+              "iataCode": "ZRH",
+              "at": "2020-08-02T06:10:00"
+            },
+            "carrierCode": "LX",
+            "number": "139",
+            "aircraft": { "code": "77W" },
+            "operating": { "carrierCode": "LX" },
+            "duration": "PT12H25M",
+            "id": "74",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          },
+          {
+            "departure": {
+              "iataCode": "ZRH",
+              "at": "2020-08-02T21:10:00"
+            },
+            "arrival": {
+              "iataCode": "ATH",
+              "at": "2020-08-03T00:45:00"
+            },
+            "carrierCode": "LX",
+            "number": "1842",
+            "aircraft": { "code": "321" },
+            "operating": { "carrierCode": "LX" },
+            "duration": "PT2H35M",
+            "id": "75",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      }
+    ],
+    "price": {
+      "currency": "EUR",
+      "total": "589.27",
+      "base": "255.00",
+      "fees": [
+        { "amount": "0.00", "type": "SUPPLIER" },
+        { "amount": "0.00", "type": "TICKETING" }
+      ],
+      "grandTotal": "589.27",
+      "additionalServices": [{ "amount": "200.00", "type": "CHECKED_BAGS" }]
+    },
+    "pricingOptions": {
+      "fareType": ["PUBLISHED"],
+      "includedCheckedBagsOnly": true
+    },
+    "validatingAirlineCodes": ["LX"],
+    "travelerPricings": [
+      {
+        "travelerId": "1",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "589.27",
+          "base": "255.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "73",
+            "cabin": "ECONOMY",
+            "fareBasis": "TRCOWAU1",
+            "brandedFare": "ECOSTAND",
+            "class": "T",
+            "includedCheckedBags": { "quantity": 1 }
+          },
+          {
+            "segmentId": "74",
+            "cabin": "ECONOMY",
+            "fareBasis": "TRCOWAU1",
+            "brandedFare": "ECOSTAND",
+            "class": "T",
+            "includedCheckedBags": { "quantity": 1 }
+          },
+          {
+            "segmentId": "75",
+            "cabin": "ECONOMY",
+            "fareBasis": "TRCOWAU1",
+            "brandedFare": "ECOSTAND",
+            "class": "T",
+            "includedCheckedBags": { "quantity": 1 }
+          }
+        ]
+      }
+    ]
+  }
+]
