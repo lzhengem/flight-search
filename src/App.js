@@ -3,7 +3,7 @@ import './App.css'
 import { connect } from 'react-redux'
 import { PropTypes } from 'prop-types'
 import { flightOptions } from './flightOptions'
-import { parseFlightOffer } from './lib/amadeusParser'
+import { displayFlights } from './lib/amadeusParser.jsx'
 
 function App ({ dispatch, flights }) {
   const [payload, setPayload] = useState({})
@@ -43,30 +43,14 @@ function App ({ dispatch, flights }) {
       Date:{' '}
       <input name="date" placeholder="2020-08-01" onChange={handleOnChange} />
       Adults: <input name="adults" onChange={handleOnChange} />
-      <div
+      <button
         onClick={() => {
           dispatch({ type: 'FLIGHT_SEARCH_REQUESTED', payload: payload })
         }}
       >
         Request some flights
-      </div>
-      {parseFlightOffer(flights).map((flight, flightOption) => {
-        return (
-          <div key={flightOption}>
-            Flight option: {flightOption + 1}{' '}
-            {flight.map((itineraries, itineraryIndex) => {
-              return itineraries.map((segment, segmentIndex) => {
-                return (
-                  <div key={flightOption + itineraryIndex + segmentIndex}>
-                    Origin: {segment.origin} Destination: {segment.destination}{' '}
-                    start: {segment.start} end: {segment.end}
-                  </div>
-                )
-              })
-            })}
-          </div>
-        )
-      })}
+      </button>
+      {displayFlights(flights)}
     </div>
   )
 }
