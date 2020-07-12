@@ -19,7 +19,10 @@ function * getAmadeus (action) {
   try {
     const flightSearch = yield call(() => amadeusFlightSearch(action.payload))
 
-    yield put({ type: 'FLIGHT_SEARCH_RECEIVED', payload: flightSearch.data })
+    yield put({
+      type: 'FLIGHT_SEARCH_RECEIVED',
+      payload: flightSearch.data
+    })
   } catch (e) {
     console.log(e)
   }

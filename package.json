@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "amadeus": "^5.1.0",
     "axios": "^0.19.2",
+    "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -25,7 +26,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "lint": "eslint --fix src/**/*.js src/**/*.jsx"
+    "lint": "eslint --fix src/**/*.js src/**/*.jsx",
+    "format": "prettier --write src/**/*.js src/**/*.jsx"
   },
   "eslintConfig": {
     "extends": "react-app"
