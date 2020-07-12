@@ -48,7 +48,7 @@ function App ({ dispatch, flights }) {
           dispatch({ type: 'FLIGHT_SEARCH_REQUESTED', payload: payload })
         }}
       >
-        Request some flights
+        <div>Request some flights</div>
       </button>
       {displayFlights(flights)}
     </div>
