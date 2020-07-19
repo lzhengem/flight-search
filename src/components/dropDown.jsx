@@ -1,6 +1,6 @@
 import React from "react"
 
-const DropDown = ({ width = "base", options, name }) => {
+const DropDown = ({ width = "base", options, name, onChange }) => {
   let widthCss
   switch (width) {
     case "largest": {
@@ -19,7 +19,10 @@ const DropDown = ({ width = "base", options, name }) => {
       widthCss = "w-32"
   }
   return (
-    <select className={`${widthCss} border border-gray-500 rounded`}>
+    <select
+      className={`${widthCss} border border-gray-500 rounded`}
+      onChange={onChange}
+    >
       {options.map((option) => {
         return (
           <option name={name} value={option}>
