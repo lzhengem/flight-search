@@ -18,12 +18,14 @@ const DropDown = ({ width = "base", options, name, onChange }) => {
     default:
       widthCss = "w-32"
   }
+
+  const emptyOption = [""]
   return (
     <select
       className={`${widthCss} border border-gray-500 rounded`}
       onChange={onChange}
     >
-      {options.map((option) => {
+      {emptyOption.concat(options).map((option) => {
         return (
           <option name={name} value={option}>
             {option}

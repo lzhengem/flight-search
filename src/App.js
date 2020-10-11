@@ -5,6 +5,7 @@ import { PropTypes } from "prop-types"
 import { flightOptions } from "./flightOptions"
 import { LayoutContainer } from "./layoutContainer"
 import { displayFlights } from "./lib/amadeusParser.jsx"
+import { DropDown } from "./components/dropDown"
 
 function App({ dispatch, flights }) {
   const [payload, setPayload] = useState({})
@@ -33,7 +34,8 @@ function App({ dispatch, flights }) {
     <div className="App">
       <LayoutContainer header={header} footer={footer}>
         Origin:
-        <select name="origin" onChange={handleOnChange}>
+        <DropDown options={Object.keys(flightOptions)} name="origin" />
+        {/* <select name="origin" onChange={handleOnChange}>
           {[""].concat(Object.keys(flightOptions)).map((origin) => {
             return (
               <option key={origin} value={origin}>
@@ -41,8 +43,8 @@ function App({ dispatch, flights }) {
               </option>
             )
           })}
-        </select>
-        Destination:
+        </select> */}
+        {/* Destination:
         <select name="destination" onChange={handleOnChange}>
           {payload.origin &&
             [""].concat(flightOptions[payload.origin]).map((destination) => {
@@ -63,7 +65,7 @@ function App({ dispatch, flights }) {
         >
           <div>Request some flights</div>
         </button>
-        {displayFlights(flights)}
+        {displayFlights(flights)} */}
       </LayoutContainer>
     </div>
   )
